@@ -3,11 +3,11 @@ import fs from "fs";
 import path from "path";
 
 (async () => {
-  const sdk = new ThirdwebSDK("goerli");
+  const sdk = new ThirdwebSDK("polygon");
   // replace the addresses and amount with your own
-  const collectionAddress = "0x08d4CC2968cB82153Bb70229fDb40c78fDF825e8";
-  const tokenAddress = "0x2D2DeDba9D45DDaCd938B9DA5b3ED6F7aA18b5C4";
-  const tokenAmount = 1200;
+  const collectionAddress = "0x328e9c77f7F1aF8f55F11ECc6219E52b3C4C24A7";
+  const tokenAddress = "0xc08a1971D96D4d32AEaDBdFceFf9D8582c863003";
+  const tokenAmount = 12000000;
 
   const contract = await sdk.getContract(collectionAddress);
 
